@@ -33,7 +33,7 @@ Daily_avg_temp — average outdoor temperature (°C)
 
 Daily_sun_time_hours — average daily sunlight duration (hours)
 
-days — number of days to simulate (max 10)
+days — number of days to simulate (max 30)
 
 🌡️ Constants (default)
 Constant	Meaning	Typical Value	Unit
