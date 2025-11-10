@@ -37,10 +37,17 @@ days — number of days to simulate (max 10)
 
 🌡️ Constants (default)
 Constant	Meaning	Typical Value	Unit
+
 Starting_tank_temp	Initial tank temperature	12.0	°C
+
 Solar	Solar radiation intensity	800	W/m²
-Panel_efficiency	Collector efficiency	0.8	—
+
+Panel_efficiency	Collector efficiency	0.8	
+
 densityWater	Density of water	1.0	kg/L
+
 heatCapacityWater	Specific heat of water	4180	J/kg°C
+
 tankHeatLoss	Overall heat loss coefficient	5.0	W/°C
+
 dt	Time step	1.0	s
