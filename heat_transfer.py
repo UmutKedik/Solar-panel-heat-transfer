@@ -6,7 +6,7 @@ Daily_sun_time_hours = float(input("Please write avarage daily sun duration in t
 
 # --- Input validation ---
 if Panel_area <= 0 or Tank_Volume <= 0 or Daily_sun_time_hours <= 0:
-    print("Error: all inputs must be positive numbers.")
+    print("Error: Panel area, tank volume, and sunlight duration must be positive numbers.")
     exit()
 
 #constants
@@ -22,7 +22,11 @@ heatCapacityWater = 4180.0 #energy needed to change the tank’s temperature
 massWaterTank = Tank_Volume * densityWater
 tankHeatLoss = 5.0
 
+# --- Days input ---
 days = float(input("How many days do you want to simulate (max 30)? : "))
+if days <= 0:
+    print("Error: Number of days must be positive.")
+    exit()
 if days > 30:
     days = 30
 
