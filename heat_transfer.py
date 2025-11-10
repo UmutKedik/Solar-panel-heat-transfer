@@ -4,6 +4,11 @@ Tank_Volume = float(input("Please enter the tank capacity (Liter) : "))
 Daily_avg_temp = float(input("Please avarage daily temperature (°C) : "))
 Daily_sun_time_hours = float(input("Please write avarage daily sun duration in the area (hours) : "))   # Daily sun duration in hours
 
+# --- Input validation ---
+if Panel_area <= 0 or Tank_Volume <= 0 or Daily_sun_time_hours <= 0:
+    print("Error: all inputs must be positive numbers.")
+    exit()
+
 #constants
 Starting_tank_temp = 12.0    # °C
 Daily_sun_time = Daily_sun_time_hours * 3600   # Daily sun duration in seconds
